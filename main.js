@@ -20,7 +20,7 @@ function calc_cost(miles) {
     if(miles > 350)
         variation = 100
 
-    let predicted_cost = fuel_consumption + maintenace_cost + dh_componsation + other_costs + variation
+    let predicted_cost = fuel_consumption + maintenace_cost  + other_costs + variation
     let profit = (0.25 * predicted_cost) 
     profit = parseInt(profit)
 
