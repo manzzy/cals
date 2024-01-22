@@ -4,13 +4,13 @@
 
 document.querySelector('.calc-btn').addEventListener('click', () => {
     let miles_ = parseFloat(document.querySelector('.miles').value)
-    document.querySelector('.fair-price').innerText = "$ " + calc_cost(miles_)
+    document.querySelector('.fair-price').innerText = "$ " + calc_cost(miles_ + 50)
 })
 
 function calc_cost(miles) {
     let mpg = 14.5
     let fuel_per_gallon_cost = 3.1
-    let fuel_consumption = (miles + 50 / mpg) * fuel_per_gallon_cost
+    let fuel_consumption = (miles / mpg) * fuel_per_gallon_cost
     
     let maintenace_cost = 100
     // let dh_componsation = 35
